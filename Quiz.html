@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+
+    <style>
+        body {
+            background-color: darkred;
+            font-size: 23pt
+        }
+
+        h1 {
+            color: gold;
+            font-size: 58pt;
+            text-align: center
+        }
+
+        p {
+            color: cyan
+        }
+
+        .intro {
+            color: lime
+        }
+
+        input[type="button"] {
+            color: green;
+            background-color: yellow;
+            font-size: 20pt
+        }
+
+        input[type="button"]:hover {
+            color: yellow;
+            background-color: green;
+            font-size: 30pt;
+            transition: 1s
+        }
+
+        input[type="text"] {
+            color: rgb(5, 13, 177);
+            background-color: darkgoldenrod;
+            font-size: 20pt
+        }
+    </style>
+    <script>
+        function check1() {
+            var answer = document.getElementById("q1").value;
+            if(answer=="b") {
+                alert("Correct!")
+            } else {
+                alert("Wrong!")
+            }
+        }
+
+        function check2() {
+            var answer = document.getElementById("q2").value;
+            if(answer=="b") {
+                alert("Correct!")
+            } else {
+                alert("Wrong!")
+            }
+        }
+
+        function check3() {
+            var answer = document.getElementById("q3").value;
+            if(answer=="a") {
+                alert("Correct!")
+            } else {
+                alert("Wrong!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Quiz!!!</h1>
+    <p class="intro">Here is a quiz of 3 completely random questions for you to answer. Type a or b to answer</p>
+
+    <!-- Question 1: -->
+    <p>Q1) Which contains more thermal (heat) energy?<br/>
+    a)Cup of tea    |   b)An iceberg<br/>
+    <input type="text" id="q1" value="Type in here!"/> <input type="button" onclick="check1()" value="check1"/>
+    </p>
+
+    <!-- Question 2: -->
+    <p>Q2) What chemicals are found in alkalis?<br/>
+    a)H+    |     OH-<br/>
+    <input type="text" id="q2" value="Type in here!"/> <input type="button" onclick="check2()" value="check2"/>
+    </p>
+
+    <!-- Question 3: -->
+    <p>Q3) What does CSS stand for?<br/>
+    a)Cascading Style Sheets     |     Colourful Style Settings<br/>
+    <input type="text" id="q3" value="Type in here!"/> <input type="button" onclick="check3()" value="check3"/>
+    </p>
+</body>
